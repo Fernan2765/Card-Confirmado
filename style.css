@@ -1,0 +1,86 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor{
+    background-color: gray;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.contenedor .subcontenedor{
+    width: 600px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 5px 10px black;
+}
+
+.contenedor .subcontenedor .contenido{
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+    flex: auto;
+}
+
+.contenedor .subcontenedor .contenido .icon{
+    margin-right: 10px;
+}
+
+.contenedor .subcontenedor .contenido .mensaje .title{
+    background-color: white;
+    font-weight: bolder;
+}
+
+.contenedor .subcontenedor .actions{
+    background-color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.contenedor .subcontenedor .actions button{
+    border: none;
+    padding: 15px;
+    min-width: 140px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.contenedor .subcontenedor .actions .btn-descargar{
+    background-color: orange;
+    color: black;
+}
+
+.contenedor .subcontenedor .actions .btn-descargar:hover{
+    background-color: #bd0003;
+}
+
+.contenedor .subcontenedor .actions .btn-regresar{
+    background-color: orange;
+    border: solid 1px white;
+}
+
+.contenedor .subcontenedor .actions .btn-regresar:hover{
+    background-color: #bd0003;
+}
+
+@media (max-width:600px){
+    .contenedor .subcontenedor{
+        width: 80%;
+    }
+    .contenedor .subcontenedor .actions{
+        flex-direction: column;
+    }
+}
